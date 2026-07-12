@@ -70,11 +70,11 @@ class _LoginScreenState extends State<LoginScreen> {
                     size: 56, color: Colors.white),
               ),
               const SizedBox(height: 28),
-              const Text('Welcome Back',
+              const Text('Welcome',
                   style: TextStyle(
                       fontSize: 26,
                       fontWeight: FontWeight.bold,
-                      color: AppTheme.textDark)),
+                      color: AppTheme.textDarkLight)),
               const SizedBox(height: 6),
               const Text('Sign in to explore the widget library',
                   style: TextStyle(fontSize: 14, color: AppTheme.textLight)),
@@ -148,22 +148,6 @@ class _LoginScreenState extends State<LoginScreen> {
               ),
               const SizedBox(height: 20),
               // Hint
-              Container(
-                padding: const EdgeInsets.all(12),
-                decoration: BoxDecoration(
-                  color: AppTheme.primary.withOpacity(0.08),
-                  borderRadius: BorderRadius.circular(10),
-                ),
-                child: const Row(
-                  children: [
-                    Icon(Icons.info_outline, size: 16, color: AppTheme.primary),
-                    SizedBox(width: 8),
-                    Text('Demo: username: admin | password: admin123',
-                        style:
-                            TextStyle(fontSize: 12, color: AppTheme.primary)),
-                  ],
-                ),
-              ),
             ],
           ),
         ),
